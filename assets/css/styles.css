@@ -592,3 +592,11 @@ img{max-width:100%}
 .pwpop{position:fixed;inset:0;z-index:2147483200;background:rgba(17,17,17,.55);display:flex;align-items:center;justify-content:center;padding:20px}
 .pwcard{background:#fff;border-radius:22px;padding:26px 24px 20px;max-width:400px;width:100%;box-shadow:0 30px 70px rgba(0,0,0,.35);text-align:center}
 .pwcard h3{margin:0 0 8px;font-size:22px}.pwcard p{margin:0 0 18px;color:#444;line-height:1.5}.pwcard .lnk{display:block;margin:12px auto 0}
+
+/* ===== hero buttons: reliable taps on phones and narrow windows ===== */
+.h-cta{position:relative;z-index:6}
+.h-cta .hb{position:relative;z-index:1;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none}
+.h-cta .hb *{pointer-events:none}
+.hb:hover{transform:none}
+@media(hover:hover) and (pointer:fine){.hb:hover{transform:translateY(-2px)}}
+.promo[hidden]{display:none}

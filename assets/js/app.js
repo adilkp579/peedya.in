@@ -86,6 +86,10 @@ function emptyNote(){return LD&&!P.length?SK:'<p class="note0">'+(sb?'No product
 function render(){var l=P.filter(function(p){return p.ex!==false&&(cur=='All'?p.ia!==false:p.g==cur)}).sort(byPos('pe'));$('#pgrid').innerHTML=l.length?l.map(function(p){return card(p)}).join(''):emptyNote();obs()}
 function setF(c,go){if(c==cur&&!go)return;cur=c;$$('button',fl).forEach(function(b){b.classList.toggle('on',b.dataset.f==c)});mp();var g=$('#pgrid');g.classList.add('out');setTimeout(function(){render();g.classList.remove('out')},250);if(go)goTo('products')}
 function goTo(id){var e=$('#'+id);scrollTo({top:e.getBoundingClientRect().top+scrollY-(id=='products'?60:0),behavior:'smooth'})}
+/* hero buttons (Shop Now / Explore Categories): handled directly so taps always work on phones and narrow windows */
+(function(){var hc=$('.h-cta');if(!hc)return;hc.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a');if(!a)return;e.preventDefault();e.stopPropagation();
+if(a.hasAttribute('data-shop')){openShop('All');return}
+document.body.classList.remove('lock');var t=$('#categories');if(t)scrollTo({top:Math.max(0,t.getBoundingClientRect().top+scrollY-56),behavior:'smooth'})})})();
 document.addEventListener('click',function(e){
 var th=e.target.closest('[data-th]');if(th){$('#pimg').src=U(th.dataset.th,1200);$$('.thumbs img').forEach(function(x){x.classList.toggle('on',x==th)});return}
 var pb=e.target.closest('[data-pb]');if(pb){e.preventDefault();goBanner(BN[+pb.dataset.pb]);return}
