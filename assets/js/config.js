@@ -12,7 +12,7 @@
    window.WK_CONFIG = {
     SUPABASE_URL: 'https://pfowhfszrguvwgzzbobv.supabase.co',
     SUPABASE_ANON_KEY: 'sb_publishable_icHX2nqUiiw-dtPKS8ROCQ_cPPgS9Cl',
-    ADMIN_EMAIL: 'admin@webkit.store',
+    ADMIN_EMAIL: '',
   RAZORPAY_KEY: 'rzp_live_TrIqwfzeeDGJxn',
   API_BASE: 'https://peedya-api.peedya-in.workers.dev',  // your Cloudflare Worker address, e.g. https://peedya-api.YOUR-NAME.workers.dev (see worker/README.md)
   CUSTOMER_EMAIL_DOMAIN: 'peedya.in'  // customers log in with mobile + password; the number becomes number@this-domain (no email is sent)
