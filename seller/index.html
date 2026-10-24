@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' https: data: blob:; connect-src 'self' https://*.supabase.co wss://*.supabase.co; frame-src 'none'; base-uri 'self'; object-src 'none'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Peedya Seller</title>
+<link rel="stylesheet" href="seller.css">
+<link rel="icon" type="image/png" href="../assets/img/icon-192.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+</head>
+<body>
+<div id="gate"></div>
+
+<div id="app" hidden>
+<aside class="sb" id="sb"><div class="lg">Peedya<small>SELLER</small></div>
+<button data-v="dash">Dashboard</button><button data-v="prod">My Products</button><button data-v="ord">Orders</button><button data-v="pay">Payments</button><button data-v="set">Settings</button>
+<div class="sp"></div><a href="../" rel="noopener">View store ↗</a><button id="lo">Log out</button></aside>
+<main><div class="tb"><button id="mn" aria-label="Menu">☰</button><h1 id="ttl"></h1><div id="act"></div></div><div id="vw"></div></main>
+</div>
+<div class="md" id="md"><div class="card" id="mc"></div></div>
+<div class="toast" id="ts"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="../assets/js/config.js"></script>
+<script src="seller.js"></script>
+</body>
+</html>

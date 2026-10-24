@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' https: data: blob:; connect-src 'self' https://*.supabase.co wss://*.supabase.co; frame-src 'none'; base-uri 'self'; object-src 'none'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>WebKit Admin</title>
+<link rel="stylesheet" href="admin.css">
+<link rel="icon" type="image/png" href="../assets/img/icon-192.png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+</head>
+<body>
+<div id="auth"><div class="card"><div class="lg" style="padding:0 0 14px;color:#111">WebKit <small>Admin</small></div><h1 id="at"></h1><p class="mut" id="as"></p><div style="margin:18px 0 6px"><label>Username<input id="un" autocomplete="username" autocapitalize="none"></label><label>Password<input id="pw" type="password" autocomplete="current-password"></label></div><button class="btn" id="ab" style="width:100%">Log in</button><div class="err" id="ae"></div></div></div>
+
+<div id="app" hidden>
+<div id="sbk"></div>
+<aside class="sb" id="sb"><div class="lg">WebKit<small>ADMIN</small></div>
+<nav class="nv">
+<button data-v="dash"><span>Dashboard</span></button>
+<small class="grp">Store</small>
+<button data-v="prod"><span>Admin Products</span></button><button data-v="aprod"><span>All Products</span></button><button data-v="cat"><span>Categories</span></button><button data-v="tabs"><span>Explore Tabs</span></button><button data-v="hero"><span>Slider</span></button><button data-v="promo"><span>Promo Banners</span></button><button data-v="pos"><span>Positions</span></button>
+<small class="grp">Sales &amp; customers</small>
+<button data-v="ord"><span>Admin Orders</span></button><button data-v="aord"><span>All Orders</span></button><button data-v="cus"><span>Customers</span></button><button data-v="msg"><span>Messages</span><span class="nb" id="mnb" hidden></span></button><button data-v="sub"><span>Subscribers</span></button>
+<small class="grp">Sellers</small>
+<button data-v="sapp"><span>Applications</span><span class="nb" id="snb1" hidden>0</span></button><button data-v="spa"><span>Product Approvals</span><span class="nb" id="snb2" hidden>0</span></button><button data-v="slist"><span>Sellers List</span></button><button data-v="spay"><span>Seller Payments</span></button><button data-v="sord"><span>Seller Orders</span></button><button data-v="sprod"><span>Seller Products</span></button>
+<small class="grp">System</small>
+<button data-v="set"><span>Settings</span></button>
+</nav>
+<div class="ft"><a href="../" target="_blank" rel="noopener">View store ↗</a><button id="lo">Log out</button></div></aside>
+<main><div class="tb"><button id="mn" aria-label="Menu">☰</button><h1 id="ttl"></h1><span class="sync" id="sync"></span><div id="act"></div></div><div id="vw"></div></main>
+</div>
+<div class="md" id="md"><div class="card" id="mc"></div></div>
+<div class="toast" id="ts"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="../assets/js/config.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

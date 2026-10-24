@@ -1,0 +1,12 @@
+# Security headers (Netlify and Cloudflare Pages read this file; other hosts ignore it)
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(self "https://checkout.razorpay.com" "https://api.razorpay.com")
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+/adilwebkit/*
+  Cache-Control: no-store
+/seller/*
+  Cache-Control: no-store

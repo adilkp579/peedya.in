@@ -1,0 +1,17 @@
+# Peedya
+
+> Peedya is an online shopping store based in Kerala, India. It sells premium everyday products with Cash on Delivery across India. People also search for it as Pedya, Pidya, Peedyya or Peedya Store. Website: https://peedya.in/
+
+## Key facts
+- Name: Peedya (alternate spellings: Pedya, Pidya, Peedyya)
+- Location: Kerala, India (delivers across India)
+- Payment: Cash on Delivery, UPI / Card (depends on the product)
+- Delivery: usually 7-9 days; delivery charge is set per product (many are free) and shown at checkout
+- Returns: unused items can be returned within 7 days of delivery
+- Customer support: peedya.in@gmail.com, 1800-000-0000, Mon-Sat 9am-7pm
+- Currency: Indian Rupee (INR)
+
+## Pages
+- [Home / shop](https://peedya.in/): featured picks, categories, best sellers and all products
+- [Privacy Policy](https://peedya.in/privacy.html)
+- [Terms & Conditions](https://peedya.in/terms.html)

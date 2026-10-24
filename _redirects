@@ -1,0 +1,5 @@
+# Never serve project/source files from the website (Netlify and Cloudflare Pages)
+/supabase/*   /404.html   404!
+/worker/*     /404.html   404!
+/README.md    /404.html   404!
+/.env*        /404.html   404!
