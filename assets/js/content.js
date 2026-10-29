@@ -19,6 +19,6 @@ window.WK_CONTENT = {
     ['How long does delivery take?', 'Orders usually arrive within 7\u20139 days.'],
     ['Can I return a product?', 'Yes. Unused items can be returned within 7 days of delivery for a full refund or replacement.'],
     ['How can I track my order?', 'Log in from the profile icon with your mobile number to see your orders and tracking.'],
-    ['How can I contact customer support?', 'Reach us at peedya.in@gmail.com between 9am and 7pm, Monday to Saturday.']
+    ['How can I contact customer support?', 'Reach us at 9539053663 or peedya.in@gmail.com between 9am and 7pm, Monday to Saturday.']
   ]
 };
