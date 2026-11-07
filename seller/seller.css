@@ -104,3 +104,9 @@ textarea{min-height:150px;resize:vertical}
 .otabs button.on{background:#111;color:#fff;border-color:#111}.otabs button.on i{background:#fff;color:#111}
 .olist{transition:opacity .16s ease,transform .16s ease}.olist.swap{opacity:0;transform:translateY(6px)}
 .ocard .lw{display:flex;align-items:center;gap:10px;min-width:0}.ocard .lp{width:46px;height:46px;border-radius:10px;object-fit:cover;background:#eee;flex:none}
+
+.ocard .shipto{margin-top:10px;padding:12px 14px;background:#faf9f6;border:1px solid #eeece6;border-radius:10px}
+.ocard .shipto .st{font-weight:700;font-size:13px;margin-bottom:6px}
+.ocard .shipto .sr{display:flex;gap:10px;padding:3px 0;font-size:14px}
+.ocard .shipto .sr span{flex:0 0 78px;color:#777}
+.ocard .shipto .sr b{font-weight:600;color:#111;word-break:break-word}
